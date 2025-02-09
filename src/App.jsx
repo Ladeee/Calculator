@@ -10,14 +10,13 @@ function App() {
     if (value === 'C') {
       setInputValue('')
     } else if (value === 'DEL') {
-      setInputValue(inputValue.toString().slice(0, -1))
+      setInputValue(inputValue.slice(0, -1))
     } else if (value === '=') {
-      setInputValue(String(Function('"use strict";return (' + inputValue + ')')()))
+      setInputValue(eval(inputValue).toString())
     } else {
       setInputValue(inputValue + value)
     }
   }
-  
 
   return (
     <div className="app">
