@@ -1,0 +1,39 @@
+.operators-wrapper{
+  background-color: rgb(112, 110, 110);
+  color: white;
+  height: 80%;
+}
+
+.operator-lists{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  padding-left: 2rem;
+  height: 100%;
+}
+
+.num-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .3125rem;
+  width: 200px;
+  padding-top: 1.5rem;
+  font-weight: 600;
+}
+
+.operate{
+  background-color: rgb(122, 119, 119);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+  color: #FFD700;
+  border-right: 1rem solid #FFD700;
+  font-weight: 400;
+}
+
+.number{
+  cursor: pointer;
+  width: 1.25rem;
+  height: 1.25rem;
+}
